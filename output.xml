@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on darwin)" generated="2024-04-08T20:34:11.333212" rpa="false" schemaversion="5">
+<suite id="s1" name="Home" source="/Users/higorjesus/Documents/QAx/projects/yodapp/tests/home.robot">
+<test id="s1-t1" name="Deve abrir a tela principal" line="13">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://localhost:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Android Emulator</arg>
+<arg>automationName=UIAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-04-08T20:34:11.419982" elapsed="7.536431"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Yodapp</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-04-08T20:34:18.957139" elapsed="0.055164"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Mobile Training</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-04-08T20:34:19.012466" elapsed="0.023668"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>by Papito</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-04-08T20:34:19.036255" elapsed="0.018258"/>
+</kw>
+<status status="PASS" start="2024-04-08T20:34:11.419639" elapsed="7.635267"/>
+</test>
+<status status="PASS" start="2024-04-08T20:34:11.333806" elapsed="7.722645"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Home">Home</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
